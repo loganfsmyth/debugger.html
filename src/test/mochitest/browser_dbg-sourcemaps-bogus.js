@@ -24,5 +24,5 @@ add_task(async function() {
 
   // Make sure that only the single generated source exists. The
   // sourcemap failed to download.
-  is(getSources(getState()).size, 1, "Only 1 source exists");
+  is(Object.keys(getSources(getState())).length, 1, "Only 1 source exists");
 });
